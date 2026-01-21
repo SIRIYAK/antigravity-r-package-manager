@@ -1,0 +1,40 @@
+{
+    "name": "antigravity-r-package-manager",
+    "displayName": "R Package Manager Helper for Antigravity",
+    "description": "Powerful R package management, dependency scanning, and TTS capabilities for Antigravity AI.",
+    "version": "1.0.0",
+    "publisher": "Siriyak",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "R",
+        "Antigravity",
+        "Package Manager",
+        "Shiny",
+        "TTS"
+    ],
+    "icon": "icon.png",
+    "contributes": {
+        "antigravity": {
+            "skills": [
+                {
+                    "path": ".agent/skills/r_package_manager"
+                }
+            ],
+            "workflows": [
+                {
+                    "path": ".agent/workflows/r-pkg.md"
+                }
+            ]
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Siriyak/antigravity-r-package-manager"
+    },
+    "license": "MIT"
+}

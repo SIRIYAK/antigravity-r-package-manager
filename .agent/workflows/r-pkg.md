@@ -28,10 +28,16 @@ Rscript ".agent/skills/r_package_manager/scripts/install_packages.R" "PACKAGE_NA
 Rscript ".agent/skills/r_package_manager/scripts/check_deps.R" "."
 ```
 
-### Create New Package
-1. Run the creation script with your package name:
+### Build Pro Package
+1. Scaffold a high-quality package with vignettes and GitHub Actions:
 ```bash
-Rscript ".agent/skills/r_package_manager/scripts/create_package.R" "PACKAGE_NAME"
+Rscript ".agent/skills/r_package_manager/scripts/create_package_pro.R" "PRO_PACKAGE_NAME"
+```
+
+### Maintain Package
+1. Bump version or sync dependencies (replace `bump-version` with `sync-deps` if needed):
+```bash
+Rscript ".agent/skills/r_package_manager/scripts/maintain_package.R" "bump-version" "path/to/package"
 ```
 
 ### Document/Install Package
